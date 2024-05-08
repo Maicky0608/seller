@@ -446,7 +446,7 @@ const DocumentModule = new ModuleModel(documentModule, showAll, documentModule.t
     // 1. Api administrador.
     new MenuModel(apiName, showAll, apiName.toLowerCase(), ProfileTypes.Administrador, [
         new FunctionalitiesModel(readFunctionality, showAll, readFunctionality) // Consultar.
-    ], 'https://developers.exito.com/'),
+    ], 'http://sellercenter.api.exito.com.s3-website-us-east-1.amazonaws.com/'),
     // 2. App Angular administrador.
     new MenuModel(apiAngularName, showAll, apiAngularName.toLowerCase(), ProfileTypes.Administrador, [
         new FunctionalitiesModel(readFunctionality, showAll, readFunctionality) // Consultar.
@@ -454,7 +454,7 @@ const DocumentModule = new ModuleModel(documentModule, showAll, documentModule.t
     // 3. Api vendedor.
     new MenuModel(apiAdminName, false, apiAdminName.toLowerCase(), ProfileTypes.Vendedor, [
         new FunctionalitiesModel(readFunctionality, false, readFunctionality) // Consultar.
-    ], 'https://developers.exito.com/'),
+    ], 'http://sellercenter.api.exito.com.s3-website-us-east-1.amazonaws.com/'),
     // 4. App Angular vendedor.
     new MenuModel(apiAngularAdminName, false, apiAngularAdminName.toLowerCase(), ProfileTypes.Vendedor, [
         new FunctionalitiesModel(readFunctionality, false, readFunctionality) // Consultar.
