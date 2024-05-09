@@ -19,7 +19,7 @@ phases:
       - npm install -g @angular/cli@8.3.29
       - echo Instalacion de Angular finalizada.
   build:
-    commands:
+    commands: 
       - echo Iniciando compilacion...
       - |
          if expr "${CODEBUILD_INITIATOR}" : "codepipeline/SC-FRONT-PL-DEV"; then
