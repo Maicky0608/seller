@@ -41,6 +41,7 @@ export class CommonService {
     public getAllRegex(): Observable<any> {
         if (this.firstTime) {
             this.allRegex =  this.http.get(this.api.get('getRegexBasic'), { observe: 'response' });
+            this.firstTime = false;
         }
         return this.allRegex;
     }
